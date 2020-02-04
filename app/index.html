@@ -2,79 +2,74 @@
 <html lang="ru">
 
 <head>
-
 	<meta charset="utf-8">
-
-	<title>OptimizedHTML 5</title>
-	<meta name="description" content="Startup HTML template OptimizedHTML 5">
-
+	<title>РВК Оренбург</title>
 	<meta name="viewport" content="width=device-width">
-
-	<link rel="icon" href="img/favicon.png">
-	<meta property="og:image" content="img/@1x/preview.jpg">
 
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
-
+	<link rel="icon" href="img/favicon.png">
 </head>
 
 <body>
 
-	<!-- Custom HTML / Remove before use -->
-
-	<div class="container">
-		<br>
-		<h1>Welcome to startup HTML template</h1>
-		<div class="row">
-			<div class="col-md-6">1</div>
-			<div class="col-md-6">2</div>
+	<div class="pre-header">
+		<div class="container">
+			<nav class="pre-header__nav">
+				<ul class="pre-header__ul">
+					<li class="pre-header__item"><a href="#" class="pre-header__link">Новости</a></li>
+					<li class="pre-header__item"><a href="" class="pre-header__link pre-header__link_color_green">ПИСЬМО ДИРЕКТОРУ</a></li>
+				</ul>
+			</nav>
 		</div>
-<br>
-		<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button>
-<br>
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-<br>
-<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
-<br>
-<br>
-<div class="owl-carousel">
-  <div> Your Content </div>
-  <div> Your Content </div>
-  <div> Your Content </div>
-  <div> Your Content </div>
-  <div> Your Content </div>
-  <div> Your Content </div>
-  <div> Your Content </div>
-</div>
-
-<br><br>
-<a href="https://via.placeholder.com/600" rel="fancyimg">
-	<img src="https://via.placeholder.com/350" alt="" />
-</a>
-
 	</div>
+
+	<div class="search">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-2">
+					<div class="search__title">Поиск РВК</div>
+				</div>
+				<div class="col-lg-9">
+					<div class="search__inbtn">
+						<input type="hidden" name="module" value="search">
+						<input class="search__input" id="textbox" type="text" name="searchword" placeholder="Поиск">
+						<button class="search__button" type="submit">Искать</button>
+					</div>
+				</div>
+				<div class="col-lg-1">
+					<div class="search__close"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<header class="header">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-3">
+					<div class="logo"><a href="/" class="logo__link"><img src="img/logo_normal.png" alt="" class="logo__img"></a></div>
+				</div>
+				<div class="col-lg-8">
+					<nav class="general-nav">
+						<ul class="general-nav__ul">
+							<li class="general-nav__item"><a href="#" class="general-nav__link">Наша компания</a></li>
+							<li class="general-nav__item"><a href="#" class="general-nav__link">Наша продукция</a></li>
+							<li class="general-nav__item"><a href="#" class="general-nav__link">Партнерам</a></li>
+							<li class="general-nav__item"><a href="#" class="general-nav__link">Карьера</a></li>
+							<li class="general-nav__item"><a href="#" class="general-nav__link">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-lg-1">
+					<div class="search-btn"></div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+
 
 	<script src="/js/scripts.min.js"></script>
 	<script src="/js/custom.js"></script>

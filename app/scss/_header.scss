@@ -1,0 +1,118 @@
+.pre-header {
+  background: #333333;
+  &__ul {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+  &__link {
+    color: #f3f3f3;
+    padding: 10px 0px 10px 20px;
+    text-transform: uppercase;
+    display: block;
+    font-size: 13px;
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+    &_color_green {
+      color: $ad;
+      &:hover {
+        color: lighten($ad, 5%);
+      }
+    }
+  }
+}
+
+.header {
+  padding: 15px 0 7px;
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.050);
+}
+
+.general-nav {
+  &__ul {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    list-style: none;
+    margin-bottom: 0;
+  }
+  &__item {
+    border-right: 1px solid #cccccc;
+  }
+  &__link {
+    padding: 23px 20px;
+    display: block;
+    color: #24231f;
+    &:hover {
+      color: $ad;
+      text-decoration: none;
+    }
+    &_active {
+      color: $ad;
+      text-decoration: none;
+    }
+  }
+}
+
+.search {
+  background: #666;
+  padding: 15px 0;
+  display: none;
+  &_active {
+    display: block;
+  }
+  &__title {
+    color: #fff;
+    font-size: 20px;
+  }
+  &__input {
+    line-height: 24px;
+    padding: 10px;
+    height: 44px;
+    border-radius: 6px;
+    border: 0px;
+    box-shadow: inset 2px 4px 8px #cecece;
+    width: 100%;
+  }
+  &__button {
+    line-height: 39px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: -moz-max-content;
+    height: 36px;
+    border-radius: 5px;
+    background:
+    #38af49;
+    color: #fff;
+    width: 90px !important;
+    border: 0px;
+    margin-left: -95px;
+    font-size: 12px;
+    outline: 0;
+  }
+  &__close {
+  	width: 24px;
+  	height: 24px;
+  	background: url(../img/close-x.png) top left no-repeat;
+  	cursor: pointer;
+  }
+  &-btn {
+    background: url(../img/search-icon.png) center no-repeat;
+  	width: 30px;
+  	height: 31px;
+  	background-size: 100%;
+  	margin-top: 11px;
+  	padding: 0;
+  	margin-bottom: 11px;
+    cursor: pointer;
+  }
+}
