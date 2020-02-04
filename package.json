@@ -24,8 +24,11 @@
 	},
 	"dependencies": {
 		"@fancyapps/fancybox": "^3.5.7",
+		"animate.css": "^3.7.2",
 		"bootstrap": "^4.3.1",
+		"font-awesome5": "^1.0.5",
 		"jquery": "^2.2.4",
-		"owl.carousel": "^2.3.4"
+		"owl.carousel": "^2.3.4",
+		"wow.js": "^1.2.2"
 	}
 }
