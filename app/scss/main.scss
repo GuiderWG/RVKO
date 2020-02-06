@@ -77,6 +77,8 @@ body {
 	grid-area: right;
 }
 
+@import "media";
+
 @media (max-width:575.98px) {
 	.example-grid {
 		display: block;

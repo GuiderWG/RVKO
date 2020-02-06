@@ -72,6 +72,7 @@ gulp.task('scripts', function() {
 		'node_modules/owl.carousel/dist/owl.carousel.min.js',
 		'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
 		'node_modules/wow.js/dist/wow.min.js',
+		'node_modules/hc-offcanvas-nav/dist/hc-offcanvas-nav.js',
 		'app/js/libs/_lazy.js', // JS library plug-in example
 		])
 	.pipe(concat('scripts.min.js'))
