@@ -23,12 +23,12 @@
 }
 
 ::-moz-selection {
-	background-color: orange;
+	background-color: $ad;
 	color: #fff;
 }
 
 ::selection {
-	background-color: orange;
+	background-color: $ad;
 	color: #fff;
 }
 
@@ -55,6 +55,9 @@ body {
 }
 
 @import "header";
+@import "mobile-menu";
+@import "video-slider";
+@import "tizzers-category";
 
 .example-grid {
 	display: -ms-grid;
