@@ -1,0 +1,78 @@
+.tizzers-category {
+  margin-bottom: 30px;
+  padding: 20px 0 15px;
+  background: linear-gradient(to right, #2C8ABE 46%, #2DBE83 46%);
+  &__cflex {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  &__space {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &__item {
+    margin-right: 15px;
+    color: #fff;
+    flex: 0 0 126px;
+    max-width: 126px;
+  }
+  &__title {
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+    &::after {
+      content: '';
+      background: url(../img/white_strel.png);
+      background-size: contain;
+      position: absolute;
+      right: -33px;
+      top: 4px;
+      width: 24px;
+      height: 17px;
+      transition: .3s;
+    }
+    &:hover::after {
+      right: -38px;
+    }
+  }
+  &__name {
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, #000000, rgba(206, 173, 120, 0));
+    padding-left: 5px;
+    height: 100%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 12px;
+
+  }
+  &__link {
+    color: #fff;
+    display: block;
+    position: relative;
+    transition: .2s;
+    &:hover {
+      opacity: 0.8;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}

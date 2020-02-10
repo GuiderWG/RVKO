@@ -1,0 +1,44 @@
+.msk {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	z-index: 3;
+	opacity: .5;
+}
+
+.caption-slide {
+	z-index: 9;
+	opacity: .9;
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
+	-webkit-transition: all 0.7s cubic-bezier(0.32, 0.34, 0, 1.62) 0.6s;
+	-o-transition: all 0.7s cubic-bezier(0.32, 0.34, 0, 1.62) 0.6s;
+	transition: all 0.7s cubic-bezier(0.32, 0.34, 0, 1.62) 0.6s;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+  &__text {
+    margin: 0;
+  	font-size: 42px;
+  	line-height: normal;
+  	font-weight: 300;
+  	text-transform: uppercase;
+  }
+}
+
+.main-slider.slick-dotted.slick-slider {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+  overflow: hidden;
+  margin-bottom: 0;
+}

@@ -23,12 +23,12 @@
 }
 
 ::-moz-selection {
-	background-color: orange;
+	background-color: $ad;
 	color: #fff;
 }
 
 ::selection {
-	background-color: orange;
+	background-color: $ad;
 	color: #fff;
 }
 
@@ -54,7 +54,44 @@ body {
 	color: #666666;
 }
 
+.title-default {
+	color: $tn;
+	font-size: 38px;
+	font-weight: 400;
+	text-decoration: none;
+	display: inline-block;
+	margin-bottom: 30px;
+	&:hover {
+		text-decoration: none;
+		color: $tn;
+		opacity: .8;
+	}
+	&_arrow {
+		position: relative;
+		margin-bottom: 10px;
+		&::after {
+      content: '';
+      background: url(../img/grey_strel.png);
+      background-size: contain;
+      position: absolute;
+      right: -53px;
+      top: 50%;
+      width: 33px;
+      height: 24px;
+			margin-top: -12px;
+      transition: .3s;
+    }
+    &:hover::after {
+      right: -58px;
+    }
+	}
+}
+
 @import "header";
+@import "mobile-menu";
+@import "video-slider";
+@import "tizzers-category";
+@import "news-block";
 
 .example-grid {
 	display: -ms-grid;
