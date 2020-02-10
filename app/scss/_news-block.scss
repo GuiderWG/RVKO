@@ -1,0 +1,47 @@
+.news-company {
+  margin-bottom: 40px;
+  &__item {
+    text-decoration: none;
+    color: $tn;
+    display: block;
+    margin: 15px 41px 15px 0;
+    &:hover {
+      text-decoration: none;
+      color: $tn;
+    }
+    &_border_bottom {
+      border-bottom: 1px solid #b6b6b6;
+      padding-bottom: 20px;
+    }
+  }
+  &__name {
+    font-size: 20px;
+    color: $tn;
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: .3s;
+    &:hover {
+      opacity: .8;
+    }
+  }
+  &__text {
+    margin-bottom: 10px;
+    line-height: 22px;
+  }
+  &__date {
+    color: #989898;
+    font-size: 15px;
+  }
+  &_bg_gray {
+    background: #DDDDDD;
+    padding: 40px 0 15px;
+  }
+  &__photo {
+    margin-bottom: 20px;
+    height: 165px;
+    overflow: hidden;
+  }
+  &__img {
+    width: 100%;
+  }
+}
