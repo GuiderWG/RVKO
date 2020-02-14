@@ -60,3 +60,7 @@
 .hc-offcanvas-nav a[href]:not([href="#"]) > span.nav-next {
 	border-left: 1px solid darken($gcolor, 3);
 }
+
+.hc-offcanvas-nav li.nav-back a:hover, .hc-offcanvas-nav li.nav-close a:hover {
+	background: none;
+}

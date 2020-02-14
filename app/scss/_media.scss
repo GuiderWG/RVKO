@@ -62,12 +62,48 @@
   .tizzers-category__item:last-child {
     margin-right: 0;
   }
+  .news-company__photo {
+  	height: 135px;
+  }
+  .catalog__item {
+  	height: 130px;
+  }
+  .catalog__photo {
+  	width: 130px;
+  	height: 130px;
+  	flex: 0 0 130px;
+  }
+  .catalog__name {
+  	font-weight: bold;
+  	font-size: 18px;
+  	position: relative;
+  }
+  .catalog__item_product {
+    height: auto;
+  }
+  .catalog__photo_product {
+  	width: auto;
+  	height: auto;
+  	flex: 0 0 auto;
+  }
 }
 
 @media (max-width: 767.98px) {
   .caption-slide__text {
   	font-size: 26px;
     line-height: 34px;
+  }
+  .logo_footer {
+  	text-align: center;
+  }
+  .copyright__text {
+  	font-size: 12px;
+  }
+  .copyright__phone {
+    margin-top: 20px;
+  }
+  .news-company__item {
+    margin-bottom: 20px;
   }
 }
 
@@ -91,6 +127,13 @@
   .tizzers-category {
   	background: linear-gradient(to top, #2C8ABE 61%, #2DBE83 61%);
   }
+  .catalog__name {
+  	font-size: 15px;
+  	padding-right: 17px;
+  }
+  .catalog__inf {
+  	padding: 15px 8px;
+  }
 
 }
 
@@ -103,6 +146,18 @@
 @media (max-width: 428px) {
   .pre-header__phone-link {
     margin-bottom: 10px;
+  }
+  .col-es {
+  	-webkit-box-flex: 0;
+  	-ms-flex: 0 0 100%;
+  	flex: 0 0 100%;
+  	max-width: 100%;
+  }
+  .catalog__photo_product {
+    width: 100%;
+  }
+  .catalog__img {
+    width: 100%;
   }
 }
 

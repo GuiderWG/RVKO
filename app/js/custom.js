@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+	/*Hide/Show Search*/
 	var searchBtn = $('.search-btn'),
 			closeBtn = $('.search__close'),
 			search = $('.search');
@@ -12,6 +13,42 @@ $(document).ready(function() {
 			search.removeClass('search_active');
 		});
 	});
+	/*-----*/
+
+	/*Fixed menu*/
+	$(window).scroll(function () {
+
+    $('.wr-se-head').removeClass('fixed-top');
+    if($(this).width() >= 320){
+      var preHeaderHeight = $('.pre-header').outerHeight();
+      if ($(this).scrollTop() > preHeaderHeight) {
+        $('.wr-se-head').addClass('fixed-top');
+      } else {
+        $('.wr-se-head').removeClass('fixed-top');
+      }
+    }
+  }).scroll();
+	/*-----*/
+
+	/* TOP SCROLL */
+  var offset = 300,
+    offset_opacity = 1200,
+    scroll_top_duration = 700,
+    $back_to_top = $('.cd-top');
+  $(window).scroll(function() {
+    ($(this).scrollTop() > offset) ? $back_to_top.addClass('cd-is-visible'): $back_to_top.removeClass('cd-is-visible cd-fade-out');
+    if ($(this).scrollTop() > offset_opacity) {
+      $back_to_top.addClass('cd-fade-out');
+    }
+  });
+
+  $back_to_top.on('click', function(event) {
+    event.preventDefault();
+    $('body,html').animate({
+      scrollTop: 0,
+    }, scroll_top_duration);
+  });
+  /*---*/
 
 	/* Mobile menu */
 	var menuLink = $('.mobile-menu-btn');
@@ -168,6 +205,66 @@ $(document).ready(function() {
 	  resizePlayer(iframes, 16/9);
 	});
 	/*-------*/
+
+	/*YANDEX MAP*/
+  var ifmap = document.getElementById('left-map');
+  if (ifmap != null) {
+    function init () {
+        var myMap = new ymaps.Map('left-map', {
+            center: [55.766147, 37.604241],
+            controls: [],
+            zoom: 16,
+                behaviors: ['default', 'scrollZoom']
+            }),
+            myPlacemark = new ymaps.Placemark([55.766147, 37.604241], {
+							hintContent: 'г. Москва, ул.Тверская д.18, корп. 1, офис 720',
+              balloonContent: 'г. Москва, ул.Тверская д.18, корп. 1, офис 720'
+            }, {
+              iconLayout: 'default#image',
+              iconImageHref: '/img/big_shema.png',
+              iconImageSize: [29, 47],
+              iconImageOffset: [-14, -47]
+            }),
+
+            myCollection = new ymaps.GeoObjectCollection();
+
+        myCollection.add(myPlacemark);
+
+        myMap.geoObjects.add(myCollection);
+
+    }
+    ymaps.ready(init);
+  }
+
+  var ifmapRight = document.getElementById('right-map');
+  if (ifmapRight != null) {
+    function init () {
+        var myMap = new ymaps.Map('right-map', {
+            center: [51.803785, 55.065550],
+            controls: [],
+            zoom: 16,
+                behaviors: ['default', 'scrollZoom']
+            }),
+            myPlacemark = new ymaps.Placemark([51.803785, 55.065550], {
+							hintContent: 'г. Оренбург, пр. Братьев Коростелевых, 52',
+              balloonContent: 'г. Оренбург, пр. Братьев Коростелевых, 52'
+            }, {
+              iconLayout: 'default#image',
+              iconImageHref: '/img/big_shema.png',
+              iconImageSize: [29, 47],
+              iconImageOffset: [-14, -47]
+            }),
+
+            myCollection = new ymaps.GeoObjectCollection();
+
+        myCollection.add(myPlacemark);
+
+        myMap.geoObjects.add(myCollection);
+
+    }
+    ymaps.ready(init);
+  }
+  /*---*/
 
 	new WOW().init();
 

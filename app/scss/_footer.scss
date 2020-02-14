@@ -49,6 +49,89 @@
   }
   &__phone-link {
     display: block;
-    font-size: 13px;
+    font-size: 16px;
+    font-weight: bold;
+    color: $tn;
+    &:hover {
+      color: $tn;
+    }
   }
 }
+
+.cd-top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  white-space: nowrap;
+  background: rgba(56,175,73, 0.9);
+  border: 2px solid transparent;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -webkit-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  z-index: 9999; }
+  .cd-top i {
+    -webkit-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out; }
+  .cd-top:hover i {
+    -webkit-animation: up 1s ease-in-out infinite;
+            animation: up 1s ease-in-out infinite; }
+
+@-webkit-keyframes up {
+  0%,
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, -5px);
+            transform: translate(0, -5px); } }
+
+@keyframes up {
+  0%,
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, -5px);
+            transform: translate(0, -5px); } }
+
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -o-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s; }
+
+.cd-top.cd-is-visible {
+  visibility: visible;
+  opacity: 1; }
+
+.cd-top.cd-fade-out {
+  opacity: .5; }
+
+.cd-top:hover {
+  border: 2px solid rgba(56,175,73, 1);
+  color: #38AF49;
+  background-color: transparent;
+  opacity: 1;
+  text-decoration: none; }

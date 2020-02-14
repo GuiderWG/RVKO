@@ -54,6 +54,26 @@ body {
 	color: #666666;
 }
 
+h1 {
+	font-size: 42px;
+	margin-bottom: 36px;
+}
+
+a {
+	color: $text;
+	text-decoration: none;
+	background-color: transparent;
+	transition: .3s;
+	&:hover {
+		color: $ad;
+	}
+}
+
+.content {
+	min-height: 500px;
+	padding: 50px 0;
+}
+
 .title-default {
 	color: $tn;
 	font-size: 38px;
@@ -92,6 +112,8 @@ body {
 @import "video-slider";
 @import "tizzers-category";
 @import "news-block";
+@import "contacts-page";
+@import "catalog";
 @import "footer";
 
 .example-grid {
