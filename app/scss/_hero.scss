@@ -1,0 +1,15 @@
+.hero {
+  height: 100vh;
+  background: url('/img/our-company/hero-bg.jpg') no-repeat center top;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__text {
+  color: #fff;
+  font-weight: bold;
+  font-size: 60px;
+  width: 55%;
+}

@@ -1,0 +1,53 @@
+.about {
+  &__item {
+    background-color: #f7f7f7;
+    padding: 0 15px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    min-height: 250px;
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+  
+
+    &--subjects {
+      background-image: url('../img/our-company/bg1.png');
+    }
+
+    &--cities {
+      background-image: url('../img/our-company/bg2.png');
+    }
+
+    &--positions {
+      background-image: url('../img/our-company/bg3.png');
+    }
+  }
+
+
+  &__items:after {
+    content: '';
+    width: 100%;
+    height: 10px;
+    background: #666;
+    display: block;
+  }
+
+  &__text {
+    
+    &--count {
+      color: $ad;
+      font-size: 34px;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    &--custom {
+      color: #585858;
+      font-size: 20px;
+      display: block;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-decoration: underline;
+    }
+  }
+}

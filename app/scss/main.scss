@@ -92,6 +92,10 @@ body {
 @import "video-slider";
 @import "tizzers-category";
 @import "news-block";
+@import "hero";
+@import "about";
+@import "production";
+@import "company";
 
 .example-grid {
 	display: -ms-grid;
@@ -112,6 +116,10 @@ body {
 	-ms-grid-row: 1;
 	-ms-grid-column: 3;
 	grid-area: right;
+}
+
+.section {
+	padding: 60px 0;
 }
 
 @import "media";

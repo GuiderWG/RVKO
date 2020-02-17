@@ -1,0 +1,35 @@
+.company {
+
+  &__title {
+    color: $tn;
+    text-decoration: none;
+  }
+
+  &__item {
+    display: block;
+    &:hover {
+      text-decoration: none;
+      opacity: .8;
+    }
+  }
+
+  &__img {
+    height: 165px;
+    max-height: 165px;
+    background-size: cover;
+    background-position: center center;
+    
+
+    &--history {
+      background-image: url('../img/our-company/company-1.jpg')
+    }
+
+    &--quality {
+      background-image: url('../img/our-company/company-2.jpg')
+    }
+
+    &--production {
+      background-image: url('../img/our-company/company-3.jpg')
+    }
+  }
+}
