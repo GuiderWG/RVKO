@@ -5,7 +5,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &--history {
+    background: url('/img/history/hero-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center top 100px;
+  }
 }
+
+
 
 .hero__text {
   color: #fff;

@@ -533,6 +533,10 @@ body {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  .hero--history {
+    background: url("/img/history/hero-bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: center top 100px; }
 
 .hero__text {
   color: #fff;
@@ -630,7 +634,9 @@ body {
 
 .company__title {
   color: #464646;
-  text-decoration: none; }
+  text-decoration: none;
+  margin-top: 15px;
+  font-size: 20px; }
 
 .company__item {
   display: block; }
@@ -649,6 +655,118 @@ body {
     background-image: url("../img/our-company/company-2.jpg"); }
   .company__img--production {
     background-image: url("../img/our-company/company-3.jpg"); }
+
+.timeline {
+  margin-top: 50px; }
+  .timeline__item-img {
+    max-width: 100%; }
+  .timeline__item-text {
+    margin-top: 20px;
+    text-align: justify; }
+  .timeline__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%; }
+    .timeline__list:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      width: 2px;
+      height: 100%;
+      margin-left: -1px;
+      background: #2cbe82; }
+  .timeline__item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative; }
+    .timeline__item:first-child .timeline__item-year {
+      top: 0px; }
+    .timeline__item:nth-child(odd) {
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
+      .timeline__item:nth-child(odd) .timeline__item-year {
+        left: 50%;
+        -webkit-transform: translateX(-98px);
+            -ms-transform: translateX(-98px);
+                transform: translateX(-98px); }
+        .timeline__item:nth-child(odd) .timeline__item-year:before {
+          content: '';
+          position: absolute;
+          right: 105px;
+          top: 9px;
+          border: 15px solid transparent;
+          border-right: 15px solid #2CBE82; }
+      .timeline__item:nth-child(odd) .timeline__item-wrap {
+        padding-right: 121px; }
+    .timeline__item:nth-child(even) {
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+      .timeline__item:nth-child(even) .timeline__item-year {
+        right: 50%;
+        -webkit-transform: translateX(106px);
+            -ms-transform: translateX(106px);
+                transform: translateX(106px); }
+        .timeline__item:nth-child(even) .timeline__item-year:before {
+          content: '';
+          position: absolute;
+          right: -30px;
+          top: 9px;
+          border: 15px solid transparent;
+          border-left: 15px solid #2CBE82; }
+      .timeline__item:nth-child(even) .timeline__item-wrap {
+        padding-left: 121px; }
+  .timeline__item-year {
+    position: absolute;
+    top: 30px;
+    margin-left: -8px;
+    color: #FFF;
+    width: 105px;
+    display: block;
+    height: 48px;
+    line-height: 48px;
+    background: #2CBE82;
+    padding: 0px 20px; }
+  .timeline__item-wrap {
+    width: 50%;
+    padding: 10px 0px; }
+
+@media (min-width: 767px) {
+  .timeline__item:not(:first-child) {
+    margin-top: -150px; } }
+
+@media (max-width: 767px) {
+  .timeline__list:before {
+    left: 30px; }
+  .timeline__item {
+    padding-left: 45px; }
+    .timeline__item:nth-child(odd) .timeline__item-wrap {
+      padding-right: 0; }
+    .timeline__item:nth-child(odd) .timeline__item-year {
+      left: 54px;
+      -webkit-transform: translateX(0); }
+    .timeline__item:nth-child(even) .timeline__item-wrap {
+      padding-left: 0; }
+    .timeline__item:nth-child(even) .timeline__item-year {
+      left: 54px;
+      -webkit-transform: translateX(0); }
+      .timeline__item:nth-child(even) .timeline__item-year:before {
+        content: '';
+        border: 15px solid transparent;
+        border-right: 15px solid #2CBE82;
+        right: 105px; }
+    .timeline__item-wrap {
+      width: 100%;
+      text-align: left;
+      padding-top: 50px;
+      margin-top: 35px; } }
 
 .example-grid {
   display: -ms-grid;
