@@ -51,3 +51,22 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .about {
+    &__item {
+      font-size: 17px;
+      min-height: 223px;
+    }
+
+    &__text {
+      &--count {
+        font-size: 50px;
+      }
+
+      &--custom {
+        font-size: 22px;
+      }
+    }
+  }
+}

@@ -518,7 +518,7 @@ body {
     width: 100%; }
 
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   background: url("/img/our-company/hero-bg.jpg") no-repeat center top;
   background-size: cover;
   display: -webkit-box;
@@ -556,6 +556,11 @@ body {
   .hero__text {
     width: 100%;
     font-size: 50px; } }
+
+@media (max-width: 576px) {
+  .hero__text {
+    margin-top: 160px;
+    font-size: 30px; } }
 
 .about__item {
   background-color: #f7f7f7;
@@ -599,6 +604,15 @@ body {
   font-weight: bold;
   margin-bottom: 10px;
   text-decoration: underline; }
+
+@media (max-width: 767px) {
+  .about__item {
+    font-size: 17px;
+    min-height: 223px; }
+  .about__text--count {
+    font-size: 50px; }
+  .about__text--custom {
+    font-size: 22px; } }
 
 .production__item-img-wrap {
   position: relative; }
@@ -644,6 +658,12 @@ body {
   font-weight: bold;
   color: #333333;
   min-height: 60px; }
+
+@media (max-width: 767px) {
+  .production__item-image {
+    max-width: 100%;
+    width: auto;
+    height: auto; } }
 
 .company__title {
   color: #464646;
@@ -894,7 +914,11 @@ body {
 @media (max-width: 767.98px) {
   .caption-slide__text {
     font-size: 26px;
-    line-height: 34px; } }
+    line-height: 34px; }
+  .section {
+    padding: 30px 0; }
+  .quality {
+    height: 397px; } }
 
 @media (max-width: 575.98px) {
   .logo {
