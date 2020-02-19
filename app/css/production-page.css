@@ -1,0 +1,9 @@
+.production-types {
+  margin: 50px 0; }
+
+.production-type {
+  padding: 60px 0; }
+  .production-type:not(:last-child) {
+    border-bottom: 10px solid #65696e; }
+  .production-type__image {
+    width: 100%; }

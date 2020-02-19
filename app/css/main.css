@@ -537,12 +537,25 @@ body {
     background: url("/img/history/hero-bg.jpg") no-repeat;
     background-size: cover;
     background-position: center top 100px; }
+  .hero--production {
+    background: url("/img/production-types/hero-bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: center top 100px; }
+  .hero--quality {
+    background: url("/img/quality/hero-bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: center top 100px; }
 
 .hero__text {
   color: #fff;
   font-weight: bold;
   font-size: 60px;
-  width: 55%; }
+  width: 65%; }
+
+@media (max-width: 991px) {
+  .hero__text {
+    width: 100%;
+    font-size: 50px; } }
 
 .about__item {
   background-color: #f7f7f7;
@@ -767,6 +780,40 @@ body {
       text-align: left;
       padding-top: 50px;
       margin-top: 35px; } }
+
+.production-types {
+  margin: 50px 0; }
+
+.production-type {
+  padding: 60px 0; }
+  .production-type:not(:last-child) {
+    border-bottom: 10px solid #65696e; }
+  .production-type__image {
+    width: 100%; }
+
+.quality {
+  height: 688px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+  .quality--raw {
+    background: url("../img/quality/con2.jpg") no-repeat; }
+  .quality--equipment {
+    background: url("../img/quality/con3.jpg") no-repeat; }
+  .quality--peoples {
+    background: url("../img/quality/con4.jpg") no-repeat; }
+  .quality--control {
+    background: url("../img/quality//con5.jpg") no-repeat; }
+  .quality__inner {
+    padding-top: 400px;
+    background: #fff;
+    padding: 30px;
+    border-bottom: 12px solid #0077be; }
 
 .example-grid {
   display: -ms-grid;

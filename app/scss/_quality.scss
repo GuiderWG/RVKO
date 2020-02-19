@@ -1,0 +1,27 @@
+.quality {
+  height: 688px;
+  display: flex;
+  align-items: flex-end;
+
+  &--raw {
+    background: url('../img/quality/con2.jpg') no-repeat;
+  }
+
+  &--equipment {
+    background: url('../img/quality/con3.jpg') no-repeat;
+  }
+
+  &--peoples {
+    background: url('../img/quality/con4.jpg') no-repeat;
+  }
+
+  &--control {
+    background: url('../img/quality//con5.jpg') no-repeat;
+  }
+  &__inner {
+    padding-top: 400px;
+    background: #fff;
+    padding: 30px;
+    border-bottom: 12px solid #0077be;
+  }
+}

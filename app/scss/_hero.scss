@@ -11,13 +11,32 @@
     background-size: cover;
     background-position: center top 100px;
   }
+
+  &--production {
+    background: url('/img/production-types/hero-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center top 100px;
+  }
+
+  &--quality {
+    background: url('/img/quality/hero-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center top 100px;
+  }
 }
-
-
 
 .hero__text {
   color: #fff;
   font-weight: bold;
   font-size: 60px;
-  width: 55%;
+  width: 65%;
+}
+
+@media (max-width: 991px) {
+  .hero {
+    &__text {
+      width: 100%;
+      font-size: 50px;
+    }
+  }
 }
