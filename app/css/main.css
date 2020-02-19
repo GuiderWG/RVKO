@@ -801,9 +801,6 @@ body {
       padding-top: 50px;
       margin-top: 35px; } }
 
-.production-types {
-  margin: 50px 0; }
-
 .production-type {
   padding: 60px 0; }
   .production-type:not(:last-child) {
@@ -834,6 +831,14 @@ body {
     background: #fff;
     padding: 30px;
     border-bottom: 12px solid #0077be; }
+
+.marketing__item {
+  padding: 60px 0; }
+  .marketing__item:not(:last-child) {
+    border-bottom: 10px solid #65696e; }
+
+.marketing__image {
+  width: 100%; }
 
 .example-grid {
   display: -ms-grid;
