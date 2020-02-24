@@ -23,6 +23,18 @@
     background-size: cover;
     background-position: center top 100px;
   }
+
+  &--marketing {
+    background: url('/img/marketing/hero-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center top 100px;
+  }
+
+  &--partners {
+    background: url('/img/partners/hero-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center top 100px;
+  }
 }
 
 .hero__text {
@@ -30,6 +42,7 @@
   font-weight: bold;
   font-size: 60px;
   width: 65%;
+  margin-top: 120px;
 }
 
 @media (max-width: 991px) {
