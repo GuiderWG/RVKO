@@ -21,7 +21,7 @@
 						<nav class="pre-header__nav">
 							<ul class="pre-header__ul">
 								<li class="pre-header__item"><a href="#" class="pre-header__link">Новости</a></li>
-								<li class="pre-header__item"><a href="" class="pre-header__link pre-header__link_color_green">ПИСЬМО ДИРЕКТОРУ</a></li>
+								<li class="pre-header__item"><a href="#" data-toggle="modal" data-target="#director-message" class="pre-header__link pre-header__link_color_green">ПИСЬМО ДИРЕКТОРУ</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -201,21 +201,21 @@
 					<a href="#" class="tizzers-category__title">Трубы</a>
 					<div class="tizzers-category__space">
 						<div class="tizzers-category__item">
-							<a href="#" class="tizzers-category__link">
+							<a href="/nasha-produktsiya/" class="tizzers-category__link">
 								<img src="img/l_vod_ico_menu.jpg" alt="" class="tizzers-category__img img-fluid">
 								<div class="tizzers-category__name">Полипропиленовые</div>
 							</a>
 						</div>
 						<div class="tizzers-category__item">
-							<a href="#" class="tizzers-category__link">
+							<a href="/nasha-produktsiya/" class="tizzers-category__link">
 								<img src="img/l_vod_ico_menu.jpg" alt="" class="tizzers-category__img img-fluid">
-								<div class="tizzers-category__name">Полипропиленовые</div>
+								<div class="tizzers-category__name">Армированные</div>
 							</a>
 						</div>
 						<div class="tizzers-category__item">
-							<a href="#" class="tizzers-category__link">
+							<a href="/nasha-produktsiya/" class="tizzers-category__link">
 								<img src="img/l_vod_ico_menu.jpg" alt="" class="tizzers-category__img img-fluid">
-								<div class="tizzers-category__name">Полипропиленовые</div>
+								<div class="tizzers-category__name">Полиэтиленовые</div>
 							</a>
 						</div>
 					</div>
@@ -427,6 +427,72 @@
 	</div>
 
 	<a href="#" class="cd-top"><i class="fas fa-chevron-up"></i></a>
+
+	<div class="modal modal-message animated bounceInDown" id="director-message" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-lg modal-dialog-centered">
+			<div class="modal-content modal-message__content">
+				<div class="modal-header modal-message__header">
+					<div class="modal-message__inf">
+						<p class="modal-message__text">Здравствуйте.</p>
+						<p class="modal-message__text">Меня зовут Сергей Балтин, я Генеральный директор производственной Компании  «Пластик» (тм РВК). В этом разделе Вы можете написать письмо лично мне.</p>
+						<p class="modal-message__text">Например:<br>
+							—	оценить качество труб и фитингов РВК,<br>
+							—	оценить скорость доставки нашей продукции,<br>
+							—	дать рекомендации по улучшению работы наших менеджеров и т.д.</p>
+						<p class="modal-message__text">Я буду рад, если Вы поблагодарите наших сотрудников или предложите интересные решения, которые помогут нам выполнять наши задачи лучше.</p>
+						<p class="modal-message__text">Обещаем Вам, что все обращения будут приняты в работу.</p>
+						<p class="modal-message__text">Спасибо за Ваш интерес, отзывчивость и неравнодушие!</p>
+
+
+						<p class="modal-message__text text-right">Сергей Балтин<br>
+							генеральный директор<br>
+							производственной Компании «Пластик»</p>
+
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body modal-message__body">
+					<form class="form-message">
+						<div class="form-row">
+							<div class="col-sm-6">
+								<div class="form-group">
+									<input type="text" class="form-control form-message__control" placeholder="ФИО">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="form-group">
+									<input type="text" class="form-control form-message__control" placeholder="Город">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="form-group">
+									<input type="text" class="form-control form-message__control" placeholder="Наименование оргранизации">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="form-group">
+									<input type="text" class="form-control form-message__control" placeholder="Контактный e-mail">
+								</div>
+							</div>
+							<div class="col-12">
+						    <div class="form-group">
+						    	<textarea class="form-control form-message__control form-message__control_type_arrea" placeholder="Ваше сообщение"></textarea>
+						    </div>
+						  </div>
+
+							<div class="col-12 text-right">
+								<div class="form-group">
+									<button type="submit" class="form-message__btn">Отправить</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 

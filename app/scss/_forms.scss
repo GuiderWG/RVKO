@@ -1,0 +1,23 @@
+.form-message {
+  &__control {
+    border-radius: 0;
+    box-shadow: none;
+    &:focus {
+      box-shadow: none;
+    }
+    &_type_arrea {
+      min-height: 120px;
+      max-height: 200px;
+    }
+  }
+  &__btn {
+    background: $ad;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    transition: .3s;
+    &:hover {
+      opacity: .9;
+    }
+  }
+}

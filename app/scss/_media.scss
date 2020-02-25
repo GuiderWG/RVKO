@@ -24,6 +24,9 @@
   .tizzers-category__name {
     font-size: 11px;
   }
+  .temp-pressure {
+  	max-width: 95%;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -86,6 +89,24 @@
   	height: auto;
   	flex: 0 0 auto;
   }
+  .catalog-id__photo {
+    margin-bottom: 40px;
+    display: block;
+  }
+  .catalog-id__title {
+  	margin-bottom: 15px;
+  }
+  .catalog-id__brand {
+  	margin: 0px 0 30px;
+  }
+  .modal-message__header {
+  	background-position: top left;
+    height: auto;
+  }
+  .modal-message__text {
+  	font-size: 13px;
+  	margin-bottom: 7px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -104,6 +125,19 @@
   }
   .news-company__item {
     margin-bottom: 20px;
+  }
+  .catalog-id__brand {
+  	margin: 40px 0 30px;
+  }
+  .dowload-id {
+  	justify-content: center;
+  }
+  .dowload-id__item + .dowload-id__item {
+  	margin-left: 20px;
+  }
+  .temp-pressure {
+  	justify-content: flex-start;
+  	max-width: 100%;
   }
 }
 
@@ -134,7 +168,12 @@
   .catalog__inf {
   	padding: 15px 8px;
   }
-
+  .table-id__title {
+  	margin: 50px 0 30px;
+  }
+  .modal-message__text {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 442px) {

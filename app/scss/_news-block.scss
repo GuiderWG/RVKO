@@ -36,6 +36,8 @@
   &__text {
     margin-bottom: 10px;
     line-height: 22px;
+    min-height: 68px;
+    overflow: hidden;
   }
   &__date {
     color: #989898;
