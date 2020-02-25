@@ -553,6 +553,14 @@ body {
     background: url("/img/partners/hero-bg.jpg") no-repeat;
     background-size: cover;
     background-position: center top 100px; }
+  .hero--portfolio {
+    background: url("/img/portfolio/hero-bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: center top 100px; }
+  .hero--tech-support {
+    background: url("/img/tech-support/hero-bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: center top 100px; }
 
 .hero__text {
   color: #fff;
@@ -880,6 +888,65 @@ body {
       color: #fff;
       opacity: .8; }
 
+.portfolio-item {
+  padding: 60px 0; }
+  .portfolio-item:not(:last-child) {
+    border-bottom: 10px solid #65696e; }
+  .portfolio-item__img-wrap {
+    text-align: right; }
+  .portfolio-item__image {
+    max-width: 100%; }
+
+.tech-support-item {
+  display: block;
+  color: #fff;
+  border: 1px solid #7f7f87;
+  border-radius: 0;
+  background: #7f7f87;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 20px;
+  line-height: 61px;
+  padding: 0 20px;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  vertical-align: top;
+  margin-top: 16px;
+  margin-bottom: 16px; }
+  .tech-support-item:hover {
+    color: #fff;
+    text-decoration: none;
+    opacity: .8; }
+
+.certificates__list {
+  list-style: none;
+  padding-left: 0; }
+
+.certificates__item {
+  margin: 20px 0; }
+
+.certificates__link {
+  text-decoration: underline;
+  color: #2cbe82; }
+  .certificates__link::before {
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    width: 75px;
+    height: 75px;
+    margin-right: 20px;
+    background: url("/img/certificates/download-icon.png") 50% 50% no-repeat #009846; }
+  .certificates__link:hover {
+    color: #2cbe82;
+    opacity: .8; }
+
+@media (max-width: 767px) {
+  .section.section--certificates {
+    padding-top: 180px; }
+  .certificates__link:before {
+    display: none; } }
+
 .example-grid {
   display: -ms-grid;
   display: grid;
@@ -900,6 +967,9 @@ body {
 
 .section {
   padding: 60px 0; }
+
+.section--certificates {
+  padding-top: 200px; }
 
 @media (max-width: 1199.98px) {
   .general-nav__link {

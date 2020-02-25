@@ -1,0 +1,12 @@
+.portfolio-item {
+  padding: 60px 0;
+  &:not(:last-child) {
+    border-bottom: 10px solid #65696e;
+  }
+  &__img-wrap {
+    text-align: right;
+  }
+  &__image {
+    max-width: 100%;
+  }  
+}

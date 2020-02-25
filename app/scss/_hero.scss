@@ -35,6 +35,18 @@
     background-size: cover;
     background-position: center top 100px;
   }
+
+  &--portfolio {
+    background: url('/img/portfolio/hero-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center top 100px;
+  }
+
+  &--tech-support {
+    background: url('/img/tech-support/hero-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center top 100px;
+  }
 }
 
 .hero__text {

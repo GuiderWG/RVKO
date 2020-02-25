@@ -101,6 +101,9 @@ body {
 @import "quality";
 @import "marketing";
 @import "partners";
+@import "portfolio";
+@import "tech-support";
+@import "certificates";
 
 .example-grid {
 	display: -ms-grid;
@@ -125,6 +128,10 @@ body {
 
 .section {
 	padding: 60px 0;
+}
+
+.section--certificates {
+	padding-top: 200px;
 }
 
 @import "media";
