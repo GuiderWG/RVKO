@@ -1,0 +1,13 @@
+.production-types {
+  // margin: 50px 0;
+}
+
+.production-type {
+  padding: 60px 0;
+  &:not(:last-child) {
+    border-bottom: 10px solid #65696e;
+  }
+  &__image {
+    width: 100%;
+  }
+}

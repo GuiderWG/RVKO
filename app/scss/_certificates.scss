@@ -1,0 +1,45 @@
+.certificates {
+
+  &__list {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  &__item {
+    margin: 20px 0;
+  }
+
+  &__link {
+    text-decoration: underline;
+    color: #2cbe82;
+
+    &::before {
+      display: inline-block;
+      vertical-align: middle;
+      content: "";
+      width: 75px;
+      height: 75px;
+      margin-right: 20px;
+      background: url('/img/certificates/download-icon.png') 50% 50% no-repeat #009846;   
+    }
+
+    &:hover {
+      color: #2cbe82;
+      opacity: .8;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .section.section--certificates {
+   padding-top: 180px;
+  }
+
+  .certificates {
+    &__link {
+      &:before {
+        display: none;
+      }
+    }
+  }
+}

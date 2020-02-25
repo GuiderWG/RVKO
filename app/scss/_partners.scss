@@ -1,0 +1,39 @@
+.partners-item {
+  padding: 60px 0;
+  &:not(:last-child) {
+    border-bottom: 10px solid #65696e;
+  }
+  &__img-wrap {
+    text-align: right;
+  }
+  &__image {
+    max-width: 100%;
+  }
+
+  &__document {
+    color: #fff;
+    display: inline-block;
+    border: 1px solid #009846;
+    background: #009846;
+    box-shadow: none;
+    width: auto;
+    font-size: 20px;
+    line-height: 63px;
+    padding: 0 20px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    vertical-align: top;
+    margin-bottom: 20px;
+    margin-top: 30px;
+
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+      opacity: .8;
+    }
+  }
+
+  
+}

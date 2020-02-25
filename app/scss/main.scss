@@ -111,8 +111,19 @@ a {
 @import "mobile-menu";
 @import "video-slider";
 @import "tizzers-category";
-
 @import "news-block";
+@import "hero";
+@import "about";
+@import "production";
+@import "company";
+@import "timeline";
+@import "production-page";
+@import "quality";
+@import "marketing";
+@import "partners";
+@import "portfolio";
+@import "tech-support";
+@import "certificates";
 @import "contacts-page";
 @import "catalog";
 @import "modals";
@@ -138,6 +149,14 @@ a {
 	-ms-grid-row: 1;
 	-ms-grid-column: 3;
 	grid-area: right;
+}
+
+.section {
+	padding: 60px 0;
+}
+
+.section--certificates {
+	padding-top: 200px;
 }
 
 @import "media";

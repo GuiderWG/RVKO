@@ -1,0 +1,76 @@
+.hero {
+  min-height: 100vh;
+  background: url('/img/our-company/hero-bg.jpg') no-repeat center top;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--history {
+    background: url('/img/history/hero-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center top 100px;
+  }
+
+  &--production {
+    background: url('/img/production-types/hero-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center top 100px;
+  }
+
+  &--quality {
+    background: url('/img/quality/hero-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center top 100px;
+  }
+
+  &--marketing {
+    background: url('/img/marketing/hero-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center top 100px;
+  }
+
+  &--partners {
+    background: url('/img/partners/hero-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center top 100px;
+  }
+
+  &--portfolio {
+    background: url('/img/portfolio/hero-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center top 100px;
+  }
+
+  &--tech-support {
+    background: url('/img/tech-support/hero-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center top 100px;
+  }
+}
+
+.hero__text {
+  color: #fff;
+  font-weight: bold;
+  font-size: 60px;
+  width: 65%;
+  margin-top: 120px;
+}
+
+@media (max-width: 991px) {
+  .hero {
+    &__text {
+      width: 100%;
+      font-size: 50px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    &__text {
+      margin-top: 160px;
+      font-size: 30px;
+    }
+  }
+}

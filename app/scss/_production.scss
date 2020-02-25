@@ -1,0 +1,66 @@
+.production {
+  
+  &__item {
+
+    &-img-wrap {
+      position: relative;
+    }
+    &-title {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+      color: #fff;
+      // position: absolute;
+      width:100%;
+      bottom: -70px;
+      margin:0;
+
+      &--pipes {
+        background: #0077be;
+      }
+
+      &--fitings {
+        background: #35c08d;
+      }
+    }
+
+    &-image {
+      width: 100%;
+      height: 300px;
+    }
+  }
+
+  &__tizzers {
+    margin-top: 25px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .tizzers-category__item {
+      margin-right: 0;
+      flex: 0 0 140px;
+      max-width: 140px;
+      
+    }
+
+    .tizzers-category__link img {
+      width: 100%;
+    }
+  }
+
+  &__text {
+    margin-top: 30px;
+    font-weight: bold;
+    color: $gcolor;
+    min-height: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .production__item {
+    &-image {
+      max-width: 100%;
+      width: auto;
+      height: auto;
+    }
+  }
+}
